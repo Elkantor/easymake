@@ -2,6 +2,14 @@ body {background-color: black;}
 h1 {color: white;}
 p {color: white; font-size: large;}
 code {color: white;}
+
+html *
+{
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Arial !important;
+}
+
 header {
     background-color: rgb(56, 56, 56);
     padding: 30px;
