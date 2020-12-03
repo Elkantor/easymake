@@ -1,11 +1,27 @@
 /* body {background-color: black;} */
+@keyframes fadein {
+  from {color: #333333;}
+  to {color: white;}
+}
+@keyframes slider {
+  from{margin-left: -100%;}
+  to{margin: 0%}
+}  
 
 @font-face {
     font-family: 'Share Tech Mono';
     src: url('https://n-o-d-e.live/fonts/font.eot');
     src: local('â˜º'), url('https://n-o-d-e.live/fonts/font.woff') format('woff'), url('https://n-o-d-e.live/fonts/font.ttf') format('truetype'), url('https://n-o-d-e.live/fonts/font.svg') format('svg');
 }
+::-moz-selection { /* Code for Firefox */
+  color: green;
+  background: royalblue;
+}
 
+::selection {
+  color: green;
+  background: royalblue;
+}
 body {
     letter-spacing: 0.1px;
     padding: 0;
@@ -59,7 +75,7 @@ p {
 nav {
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 0.5;
+  flex: 0.50;
   background: #252526;
   padding: 1em;
   font-size: 1em;
@@ -69,6 +85,7 @@ code {
   padding: 5px;
   color: #c8c8c8;
   display: block;
+  
 }
 /* Style the list inside the menu */
 nav ul {
@@ -92,7 +109,14 @@ footer {
   text-align: center;
   color: white;
 }
-
+.fade{
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+.slide{
+  animation-name: slider;
+  animation-duration: 2s;
+}
 @media (max-width: 600px) {
   section {
     -webkit-flex-direction: column;

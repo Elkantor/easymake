@@ -26,11 +26,13 @@
 
         <header>
 
-            <h2>EasyMake</h2>
+            <h2 class="fade">EasyMake</h2> 
+
+            
 
         </header>
 
-        <center><p><strong><i><i>Simple, lightweight, FOSS alternative to GNU Make or CMake</i></i></strong></p></center>
+        <center><p class="slide"><strong><i><i>Simple, lightweight, FOSS alternative to GNU Make or CMake</i></i></strong></p></center>
         <br>
         <center><a href="https://github.com/undersquire/easymake">GitHub</a> | <a href="wiki.html">Wiki</a> | <a href="https://discord.gg/WnVwcrKSvz">Discord</a></center>
         <br>
@@ -40,7 +42,7 @@
 
             <p>Easymake is a brand new buildsystem for all of your C/C++ projects.</p>
 
-            <p>We found CMake to be too complicated for new users, and too confusing to migrate old projects over to it, so we took the time to write a brand new, simple syntax build system.</p>
+            <p>We found CMake to be too complicated for new users, and too confusing to migrate old projects over to it, so we took the time to write a brand new, syntax build system.</p>
 
             <br><br><br>
 
@@ -72,11 +74,15 @@
             	&nbsp; "compiler": "gcc",<br>
             	&nbsp; "output": "easymake",<br>
             	&nbsp; "includes": ["include"],<br>
-            	&nbsp; "sources": ["src/easymake.c"],<br>
+            	&nbsp; "sources": ["src/*.c"],<br>
             	&nbsp; "compiler_options": ["-s", "-O3"]<br>
             }
             </code>
 
         </div>
+        
+        <footer>
+
+        </footer>
     </body>
 </html>
